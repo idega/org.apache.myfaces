@@ -6,7 +6,7 @@
   <name>MyFaces</name>
   <groupId>bundles</groupId>
   <artifactId>net.sourceforge.myfaces</artifactId>
-  <currentVersion>1.0.5</currentVersion>
+  <currentVersion>1.0.7</currentVersion>
   <organization/>
   <inceptionYear>2003</inceptionYear>
   <shortDescription>MyFaces JSF Implementation</shortDescription>
@@ -33,13 +33,14 @@
     <dependency>
       <groupId>myfaces</groupId>
       <artifactId>myfaces</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.7</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
+    <!--
     <dependency>
       <groupId>myfaces</groupId>
       <artifactId>myfaces-share</artifactId>
@@ -49,7 +50,8 @@
       <properties>
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
-    </dependency>    
+    </dependency>
+    -->
     <dependency>
       <groupId>jdom</groupId>
       <artifactId>jdom</artifactId>
