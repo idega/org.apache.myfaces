@@ -3,7 +3,7 @@
     <name>MyFaces</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.myfaces</artifactId>
-    <currentVersion>1.0.4</currentVersion>
+    <currentVersion>1.0.5</currentVersion>
     <organization/>
     <inceptionYear>2003</inceptionYear>
     <shortDescription>MyFaces is an implementation of JavaServer Faces</shortDescription>
@@ -32,6 +32,16 @@
         </developer>
     </developers>
     <dependencies>
+        <dependency>
+            <groupId>myfaces</groupId>
+            <artifactId>myfaces</artifactId>
+            <version>1.0.5</version>
+            <type>jar</type>
+            <url>http://www.myfaces.org/</url>
+            <properties>
+            		<idegaweb.bundle.include>true</idegaweb.bundle.include>
+            </properties>
+        </dependency>      
         <dependency>
             <groupId>jdom</groupId>
             <artifactId>jdom</artifactId>
