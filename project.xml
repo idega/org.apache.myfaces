@@ -1,9 +1,10 @@
 <project>
-    <extend>../com.idega.core.bundle/base-project.xml</extend>
-    <name>idegaWeb WebFace</name>
+    <pomVersion>3</pomVersion>
+    <name>MyFaces</name>
     <groupId>bundles</groupId>
     <artifactId>net.sourceforge.myfaces</artifactId>
     <currentVersion>1.0.4</currentVersion>
+    <organization/>
     <inceptionYear>2003</inceptionYear>
     <shortDescription>MyFaces is an implementation of JavaServer Faces</shortDescription>
     <issueTrackingUrl>http://issues.idega.is</issueTrackingUrl>
@@ -23,8 +24,8 @@
     </mailingLists>
     <developers>
         <developer>
-            <id>tryggvil</id>
             <name>Tryggvi Larusson</name>
+            <id>tryggvil</id>
             <email>tryggvi@idega.is</email>
             <organization>idega software</organization>
             <roles/>
@@ -83,4 +84,5 @@
         <report>maven-file-activity-plugin</report>
         <report>maven-changes-plugin</report>
     </reports>
+    <properties/>
 </project>
