@@ -27,7 +27,7 @@
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-codec/jars/commons-codec-1.2.jar">
   </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0-20040521.jar">
+  <classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-collections/jars/commons-collections-2.1.jar">
   </classpathentry>
