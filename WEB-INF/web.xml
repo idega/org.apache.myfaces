@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <description>Smile demos</description>
+
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>client</param-value>
+        <description>
+            State saving method: "client" or "server" (= default)
+            See JSF Specification 2.5.2
+        </description>
+    </context-param>
+
+    <context-param>
+        <param-name>net.sourceforge.myfaces.ALLOW_JAVASCRIPT</param-name>
+        <param-value>true</param-value>
+        <description>
+            This parameter tells MyFaces if javascript code should be allowed in the
+            rendered HTML output.
+            If javascript is allowed, command_link anchors will have javascript code
+            that submits the corresponding form.
+            If javascript is not allowed, the state saving info and nested parameters
+            will be added as url parameters.
+            Default: "true"
+        </description>
+    </context-param>
+
+    <context-param>
+        <param-name>net.sourceforge.myfaces.PRETTY_HTML</param-name>
+        <param-value>true</param-value>
+        <description>
+            If true, rendered HTML code will be formatted, so that it is "human readable".
+            i.e. additional line separators and whitespace will be written, that do not
+            influence the HTML code. 
+            Default: "true"
+        </description>
+    </context-param>
+
+	<context-param>
+		<param-name>net.sourceforge.smile.descriptor.package</param-name>
+		<param-value>net.sourceforge.smile.examples.cbp</param-value>
+		<description>The package where the screen descriptors are located.</description>
+	</context-param>		
+	<context-param>
+		<param-name>net.sourceforge.smile.descriptor.postfix</param-name>
+		<param-value></param-value>
+		<description>The postfix to append to descriptor class names.</description>
+	</context-param>	
+
+    <!-- WelcomeFile Filter -->
+    <!--
+    <filter>
+        <filter-name>WelcomeFile Filter</filter-name>
+        <filter-class>net.sourceforge.myfaces.webapp.filter.WelcomeFileFilter</filter-class>
+        <description>
+            Due to the manner in which the JSP / servlet lifecycle
+            functions, it is not currently possible to specify default
+            welcome files for a web application and map them to the
+            MyFacesServlet.  Normally they will be mapped to the
+            default servlet for the JSP container.  To offset this
+            shortcoming, we utilize a servlet Filter which examines
+            the URI of all incoming requests.
+        </description>
+    </filter>
+    -->
+
+    <!-- O'Reilly MultiPart Filter -->
+    <filter>
+        <filter-name>multipartFilter</filter-name>
+        <filter-class>com.oreilly.servlet.MultipartFilter</filter-class>
+        <!--
+        <init-param>
+            <param-name>uploadDir</param-name>
+            <param-value>/tmp</param-value>
+            <description>
+                Temporary directory where uploaded files will be written to.
+            </description>
+        </init-param>
+        -->
+    </filter>
+
+
+    <!-- Filter Mappings -->
+
+    <!-- see MyFaces Filter above for a description -->
+    <!--
+    <filter-mapping>
+        <filter-name>WelcomeFile Filter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+
+    <filter-mapping>
+        <filter-name>multipartFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+
+    <!-- Listener, that does all the startup work (configuration, init). -->
+    <listener>
+        <listener-class>net.sourceforge.myfaces.webapp.StartupServletContextListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>net.sourceforge.smile.application.SmileInstaller</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.idega.faces.IWApplicationListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.idega.faces.smile.IWInstaller</listener-class>
+    </listener>
+
+
+    <!-- Faces Servlet -->
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>net.sourceforge.myfaces.webapp.MyFacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+
+    <!-- Faces Servlet Mapping -->
+
+    <!-- virtual path mapping -->
+    <!--
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    -->
+
+    <!-- extension mapping -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+    <!-- idegaWeb URLs: -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/pages/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/window/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome files -->
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
