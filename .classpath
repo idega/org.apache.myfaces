@@ -5,6 +5,8 @@
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-1.0.7.jar">
   </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-components-1.0.7.jar">
+  </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/servlets.com/jars/cos-05Nov2002.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-digester/jars/commons-digester-1.6.jar">
@@ -18,6 +20,8 @@
   <classpathentry kind="var" path="MAVEN_REPO/commons-el/jars/commons-el-1.0.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-codec/jars/commons-codec-1.3.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-fileupload/jars/commons-fileupload-1.0.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-collections/jars/commons-collections-2.1.jar">
   </classpathentry>
