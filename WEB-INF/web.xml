@@ -108,13 +108,6 @@
     <listener>
         <listener-class>net.sourceforge.smile.application.SmileInstaller</listener-class>
     </listener>
-    <listener>
-        <listener-class>com.idega.faces.IWApplicationListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>com.idega.faces.smile.IWInstaller</listener-class>
-    </listener>
-
 
     <!-- Faces Servlet -->
     <servlet>
@@ -138,15 +131,6 @@
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.jsf</url-pattern>
-    </servlet-mapping>
-    <!-- idegaWeb URLs: -->
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/pages/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/window/*</url-pattern>
     </servlet-mapping>
 
     <!-- Welcome files - Commented out for now
