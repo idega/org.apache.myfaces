@@ -67,7 +67,7 @@
       <properties/>
     </dependency>
     <dependency>
-      <groupId>cos</groupId>
+      <groupId>servlets.com</groupId>
       <artifactId>cos</artifactId>
       <version>05Nov2002</version>
       <type>jar</type>
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>commons-digester</groupId>
       <artifactId>commons-digester</artifactId>
-      <version>1.5</version>
+      <version>1.6</version>
       <type>jar</type>
       <url>http://jakarta.apache.org/commons/digester/</url>
       <properties>
