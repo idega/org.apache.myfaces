@@ -40,17 +40,6 @@
         </description>
     </context-param>
 
-	<context-param>
-		<param-name>net.sourceforge.smile.descriptor.package</param-name>
-		<param-value>net.sourceforge.smile.examples.cbp</param-value>
-		<description>The package where the screen descriptors are located.</description>
-	</context-param>		
-	<context-param>
-		<param-name>net.sourceforge.smile.descriptor.postfix</param-name>
-		<param-value></param-value>
-		<description>The postfix to append to descriptor class names.</description>
-	</context-param>	
-
     <!-- WelcomeFile Filter -->
     <!--
     <filter>
@@ -104,9 +93,6 @@
     <!-- Listener, that does all the startup work (configuration, init). -->
     <listener>
         <listener-class>net.sourceforge.myfaces.webapp.StartupServletContextListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>net.sourceforge.smile.application.SmileInstaller</listener-class>
     </listener>
 
     <!-- Faces Servlet -->
