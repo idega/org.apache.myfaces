@@ -125,6 +125,16 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
+     <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.0</version>
+      <type>jar</type>
+      <url>http://jakarta.apache.org/commons/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
 
     <!-- This Commons-Collections Dependecy is only to make the Tomcat plugin work -->
 
