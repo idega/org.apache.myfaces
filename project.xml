@@ -151,7 +151,15 @@
 	    <type>jar</type>
 	    <url>http://jakarta.apache.org/</url>
 	    <properties/>
-	</dependency>    
+	</dependency>
+		<!-- This Commons-Collections Dependecy is only to make the Tomcat plugin work -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>2.1</version>
+            <type>jar</type>
+            <url>http://jakarta.apache.org/commons/</url>
+        </dependency>     
   </dependencies>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
