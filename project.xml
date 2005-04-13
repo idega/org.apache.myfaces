@@ -5,13 +5,13 @@
   <extend>${base.project.dir}/base-dependencies.xml</extend>
   <name>MyFaces</name>
   <groupId>bundles</groupId>
-  <artifactId>net.sourceforge.myfaces</artifactId>
-  <currentVersion>1.0.7.2-SNAPSHOT</currentVersion>
+  <artifactId>org.apache.myfaces</artifactId>
+  <currentVersion>1.0.9</currentVersion>
   <organization/>
   <inceptionYear>2003</inceptionYear>
   <shortDescription>MyFaces JSF Implementation</shortDescription>
   <description>MyFaces is an implementation of JavaServer Faces</description>
-  <issueTrackingUrl>http://issues.idega.is</issueTrackingUrl>
+  <issueTrackingUrl>http://issues.apache.org/jira/secure/BrowseProject.jspa?id=10600</issueTrackingUrl>
   <versions>
     <version>
       <id>1.0.5</id>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>myfaces</groupId>
       <artifactId>myfaces</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.9</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
@@ -52,27 +52,44 @@
     </dependency>
     <dependency>
       <groupId>myfaces</groupId>
-      <artifactId>myfaces-components</artifactId>
-      <version>1.0.7</version>
+      <artifactId>myfaces-extensions</artifactId>
+      <version>1.0.9</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    <!--
     <dependency>
       <groupId>myfaces</groupId>
-      <artifactId>myfaces-share</artifactId>
-      <version>1.0.5</version>
+      <artifactId>myfaces-impl</artifactId>
+      <version>1.0.9</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    -->
-
+    <dependency>
+      <groupId>myfaces</groupId>
+      <artifactId>myfaces-wap</artifactId>
+      <version>1.0.9</version>
+      <type>jar</type>
+      <url>http://www.myfaces.org/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    <dependency>
+      <groupId>portlet-api</groupId>
+      <artifactId>portlet-api</artifactId>
+      <version>1.0</version>
+      <type>jar</type>
+      <url>http://www.jcp.org/en/jsr/detail?id=168</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
     <dependency>
       <groupId>servlets.com</groupId>
       <artifactId>cos</artifactId>

@@ -16,7 +16,7 @@
     </context-param>
 
     <context-param>
-        <param-name>net.sourceforge.myfaces.ALLOW_JAVASCRIPT</param-name>
+        <param-name>org.apache.myfaces.ALLOW_JAVASCRIPT</param-name>
         <param-value>true</param-value>
         <description>
             This parameter tells MyFaces if javascript code should be allowed in the
@@ -30,7 +30,27 @@
     </context-param>
 
     <context-param>
-        <param-name>net.sourceforge.myfaces.PRETTY_HTML</param-name>
+        <param-name>org.apache.myfaces.DETECT_JAVASCRIPT</param-name>
+        <param-value>false</param-value>
+        <description>
+            This parameter tells MyFaces if javascript code should be allowed in the
+            rendered HTML output.
+            If javascript is allowed, command_link anchors will have javascript code
+            that submits the corresponding form.
+            If javascript is not allowed, the state saving info and nested parameters
+            will be added as url parameters.
+            Default: "false"
+
+            Setting this param to true should be combined with STATE_SAVING_METHOD "server" for
+            best results.
+
+            This is an EXPERIMENTAL feature. You also have to enable the detector filter/filter mapping below to get
+            JavaScript detection working.
+        </description>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.myfaces.PRETTY_HTML</param-name>
         <param-value>true</param-value>
         <description>
             If true, rendered HTML code will be formatted, so that it is "human readable".
@@ -39,12 +59,24 @@
             Default: "true"
         </description>
     </context-param>
+    
+    <context-param>
+        <param-name>org.apache.myfaces.AUTO_SCROLL</param-name>
+        <param-value>true</param-value>
+        <description>
+            If true, a javascript function will be rendered that is able to restore the
+            former vertical scroll on every request. Convenient feature if you have pages
+            with long lists and you do not want the browser page to always jump to the top
+            if you trigger a link or button action that stays on the same page.
+            Default: "false"
+        </description>
+    </context-param>
 
     <!-- WelcomeFile Filter -->
     <!--
     <filter>
         <filter-name>WelcomeFile Filter</filter-name>
-        <filter-class>net.sourceforge.myfaces.webapp.filter.WelcomeFileFilter</filter-class>
+        <filter-class>org.apache.myfaces.webapp.filter.WelcomeFileFilter</filter-class>
         <description>
             Due to the manner in which the JSP / servlet lifecycle
             functions, it is not currently possible to specify default
@@ -56,8 +88,16 @@
         </description>
     </filter>
     -->
+    
+    <!-- JavaScriptDetector Filter -->
+<!--    <filter>-->
+<!--        <filter-name>javascriptDetector</filter-name>-->
+<!--        <filter-class>org.apache.myfaces.webapp.filter.JavaScriptDetectorFilter</filter-class>-->
+<!--    </filter>-->
 
-    <!-- MyFaces MultiPart Filter MOVED TO CORE -->
+
+
+    <!-- MyFaces Extensions Filter MOVED TO CORE -->
 
     <!-- Filter Mappings -->
 
@@ -71,13 +111,13 @@
 
     <!-- Listener, that does all the startup work (configuration, init). -->
     <listener>
-        <listener-class>net.sourceforge.myfaces.webapp.StartupServletContextListener</listener-class>
+        <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
     </listener>
 
     <!-- Faces Servlet -->
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
-        <servlet-class>net.sourceforge.myfaces.webapp.MyFacesServlet</servlet-class>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 

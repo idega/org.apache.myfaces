@@ -4,7 +4,7 @@
     <key>
       <name>iw_bundle_identifier</name>
       <type>java.lang.String</type>
-      <value>net.sourceforge.myfaces</value>
+      <value>org.apache.myfaces</value>
     </key>
   </map>
 </pxml>
