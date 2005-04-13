@@ -28,6 +28,11 @@
       <name>1.0.7.1</name>
       <tag>MYFACES_1_0_7_1</tag>
     </version>
+    <version>
+      <id>1.0.9</id>
+      <name>1.0.9</name>
+      <tag>MYFACES_1_0_9</tag>
+    </version>
   </versions>
   <branches/>
   <developers>
