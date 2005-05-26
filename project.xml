@@ -8,7 +8,6 @@
   <artifactId>org.apache.myfaces</artifactId>
   <currentVersion>1.0.9.1</currentVersion>
   <!--currentVersion>1.0.9a-SNAPSHOT</currentVersion-->
-
   <organization/>
   <inceptionYear>2003</inceptionYear>
   <shortDescription>MyFaces JSF Implementation</shortDescription>
