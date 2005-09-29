@@ -125,12 +125,10 @@
     <!-- Faces Servlet Mapping -->
 
     <!-- virtual path mapping -->
-    <!--
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
-    -->
 
     <!-- extension mapping -->
     <servlet-mapping>
