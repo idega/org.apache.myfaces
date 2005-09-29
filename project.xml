@@ -7,7 +7,7 @@
   <groupId>bundles</groupId>
   <artifactId>org.apache.myfaces</artifactId>
   <!--currentVersion>1.0.9.1</currentVersion-->
-  <currentVersion>1.0.9a-SNAPSHOT</currentVersion>
+  <currentVersion>1.1.0-SNAPSHOT</currentVersion>
   <organization/>
   <inceptionYear>2003</inceptionYear>
   <shortDescription>MyFaces JSF Implementation</shortDescription>
@@ -53,8 +53,8 @@
   <dependencies>
     <dependency>
       <groupId>myfaces</groupId>
-      <artifactId>myfaces</artifactId>
-      <version>1.0.9</version>
+      <artifactId>myfaces-jsf-api</artifactId>
+      <version>1.1.0</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
@@ -65,25 +65,15 @@
 
     <dependency>
       <groupId>myfaces</groupId>
-      <artifactId>myfaces-extensions</artifactId>
-      <version>1.0.9</version>
+      <artifactId>myfaces-tomahawk</artifactId>
+      <version>1.1.0</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
     </dependency>
     <dependency>
       <groupId>myfaces</groupId>
       <artifactId>myfaces-impl</artifactId>
-      <version>1.0.9</version>
-      <type>jar</type>
-      <url>http://www.myfaces.org/</url>
-      <properties>
-        <idegaweb.bundle.include>true</idegaweb.bundle.include>
-      </properties>
-    </dependency>
-    <dependency>
-      <groupId>myfaces</groupId>
-      <artifactId>myfaces-wap</artifactId>
-      <version>1.0.9</version>
+      <version>1.1.0</version>
       <type>jar</type>
       <url>http://www.myfaces.org/</url>
       <properties>
