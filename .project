@@ -4,6 +4,7 @@
   <name>org.apache.myfaces</name>
   <comment>MyFaces is an implementation of JavaServer Faces</comment>
   <projects>
+    <project>com.idega.block.web2.0</project>
   </projects>
   <buildSpec>
     <buildCommand>
