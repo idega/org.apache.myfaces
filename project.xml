@@ -196,8 +196,8 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
+    
     <!-- This Commons-Collections Dependecy is only to make the Tomcat plugin work -->
-
     <dependency>
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
