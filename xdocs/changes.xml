@@ -1,0 +1,19 @@
+<document>
+  <properties>
+    <title>Apache Myfaces changes</title>
+    <author email="tryggvi@idega.com">Tryggvi Larusson</author>
+  </properties>
+  <body>
+      <release version="1.1.3" date="2005-06-16">
+      <action dev="tryggvil" type="update">
+      	Declaration of version for including in ePlatform release 3.1
+      </action>
+      <action dev="tryggvil" type="update">
+      	Update of myfaces libraries to match release 1.1.3 of myfaces-jsf-api and myfaces-impl
+      	and version 1.1.3 of myfaces-tomahawk subproject.
+      </action>            
+    </release>
+
+
+  </body>
+</document>
