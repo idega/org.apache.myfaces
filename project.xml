@@ -2,7 +2,7 @@
 
 <project>
   <pomVersion>3</pomVersion>
-  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <extend>${base.project.dir}/base-project.xml</extend>
   <name>MyFaces</name>
   <groupId>bundles</groupId>
   <artifactId>org.apache.myfaces</artifactId>
