@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <projectDescription>
-	<name>org.apache.myfaces</name>
-	<comment>MyFaces is an implementation of JavaServer Faces</comment>
-	<projects>
-		<project>com.idega.block.web2.0</project>
-	</projects>
-	<buildSpec>
-		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>org.maven.ide.eclipse.maven2Builder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-	</buildSpec>
-	<natures>
-		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.maven.ide.eclipse.maven2Nature</nature>
-	</natures>
+  <name>org.apache.myfaces</name>
+  <comment>MyFaces is an implementation of JavaServer Faces</comment>
+  <projects>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
 </projectDescription>
