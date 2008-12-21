@@ -73,7 +73,7 @@
 	
 	<context-param>
 		<param-name>org.apache.myfaces.ADD_RESOURCE_CLASS</param-name>
-		<param-value>org.apache.myfaces.renderkit.html.util.DefaultAddResource</param-value>
+		<param-value>com.idega.util.resources.ResourcesAdder</param-value>
 	</context-param>
 	
 	<context-param>
