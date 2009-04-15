@@ -3,13 +3,11 @@
 <projectDescription>
   <name>org.apache.myfaces</name>
   <comment>MyFaces is an implementation of JavaServer Faces</comment>
-  <projects>
-  </projects>
+  <projects></projects>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>
-      <arguments>
-      </arguments>
+      <arguments></arguments>
     </buildCommand>
   </buildSpec>
   <natures>
