@@ -6,20 +6,8 @@
   	<version>4.1.3-SNAPSHOT</version>
   </parent>
   <packaging>jar</packaging>
-  <groupId>com.idega.block.platform</groupId>
   <artifactId>org.apache.myfaces</artifactId>
-  <version>4.1.3-SNAPSHOT</version>
   <name>Apache Myfaces</name>
-  <scm>
-    
-    <connection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.myfaces/</connection>
-    <developerConnection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.myfaces/</developerConnection> 
-    <!--
-    <connection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.myfaces/</connection>
-    <developerConnection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.myfaces/</developerConnection>
-    -->
-    <tag>com_idega_block_platform-4_1_2</tag>
-  </scm>
   
   <developers>
     <developer>
@@ -48,10 +36,22 @@
     </dependency>
     
     <dependency>
+     	<groupId>commons-codec</groupId>
+     	<artifactId>commons-codec</artifactId>
+     	<version>${commons-codec-commons-codec-version}</version>
+     	<type>jar</type>
+    </dependency>
+    <dependency>
       <groupId>org.apache.myfaces.core</groupId>
       <artifactId>myfaces-impl</artifactId>
       <version>1.2.9</version>
       <type>jar</type>
+      <exclusions>
+      	<exclusion>
+          <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>portlet-api</groupId>
