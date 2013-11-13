@@ -6,7 +6,6 @@
   	<version>5.0.0-SNAPSHOT</version>
   </parent>
   <packaging>jar</packaging>
-  <groupId>com.idega.block.platform</groupId>
   <artifactId>org.apache.myfaces</artifactId>
   <name>Apache Myfaces</name>
   
@@ -37,10 +36,22 @@
     </dependency>
     
     <dependency>
+     	<groupId>commons-codec</groupId>
+     	<artifactId>commons-codec</artifactId>
+     	<version>${commons-codec-commons-codec-version}</version>
+     	<type>jar</type>
+    </dependency>
+    <dependency>
       <groupId>org.apache.myfaces.core</groupId>
       <artifactId>myfaces-impl</artifactId>
       <version>1.2.12</version>
       <type>jar</type>
+      <exclusions>
+      	<exclusion>
+          <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>portlet-api</groupId>
